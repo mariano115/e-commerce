@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  src: local("Montserrat"),
+    url(../../Fonts/Montserrat-Light.ttf) format("opentype");
+}
+
+.homePage {
+  min-height: 100vh;
+  height: 100%;
+
+  /* Center and scale the image nicely */
+}
+.loginPageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.83;
+}
+
+.centered {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

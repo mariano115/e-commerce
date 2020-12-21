@@ -1,17 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import LoginPage from './views/login/Login';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-//Views
-import Login from './views/login/Login'
-
-ReactDOM.render( < LoginPage / >
-
-  ,
-  document.getElementById('login')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

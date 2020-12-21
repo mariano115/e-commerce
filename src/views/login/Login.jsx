@@ -1,8 +1,14 @@
-const LoginComponent = require('../../components/Login/Login');
+import LoginComponent from "../../components/Login/Login";
+import "./Login.css";
 
-function LoginPage() {
-    return <div className="login"><LoginComponent/></div>
-        
-}
+const LoginPage = () => {
+  return (
+    <div className="loginPage centered">
+      <div className="loginPageBox centered">
+        <LoginComponent />
+      </div>
+    </div>
+  );
+};
 
-export default LoginPage
+export default LoginPage;
