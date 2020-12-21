@@ -1,13 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
+import Carousel from "../../components/Carousel/Carousel";
 import "./Home.css";
 
 const HomePage = () => {
   return (
     <div className="homePage centered">
-      <div>
-        <Navbar />
-      </div>
-      <div className="loginPageBox centered"></div>
+      <Navbar />
+      <Carousel />
     </div>
   );
 };

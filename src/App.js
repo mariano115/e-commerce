@@ -4,6 +4,7 @@ import React, { Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoginPage from "./views/login/Login";
 import HomePage from "./views/home/Home";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const App = () => {
   return (

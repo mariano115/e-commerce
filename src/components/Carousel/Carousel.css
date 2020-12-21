@@ -1,0 +1,10 @@
+.carrousel {
+}
+
+.carrousel-item {
+  /*max-height: 500px;*/
+
+  width: fit-content;
+  object-fit: cover;
+  max-height: 700px;
+}
