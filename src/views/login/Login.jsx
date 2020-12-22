@@ -3,7 +3,9 @@ import "./Login.css";
 
 const LoginPage = () => {
   return (
-    <div className="loginPage centered">
+    <div className="loginPage">
+      <button className="buttonClass right">Volver</button>
+
       <div className="loginPageBox centered">
         <LoginComponent />
       </div>

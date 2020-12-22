@@ -13,7 +13,7 @@ const Navbar = () => {
           activeClassName="is-active"
           to="/login"
         >
-          Pagina Principal
+          Nosotros
         </NavLink>
 
         <NavLink
@@ -21,7 +21,7 @@ const Navbar = () => {
           activeClassName="is-active"
           to="/about"
         >
-          Catalogo
+          Productos
         </NavLink>
 
         <NavLink
@@ -29,12 +29,12 @@ const Navbar = () => {
           activeClassName="is-active"
           to="/about"
         >
-          Contactanos
+          Contacto
         </NavLink>
       </div>
       <div className="logo">
         <NavLink className="logo-item" activeClassName="is-active" to="/">
-          Porto's
+          Porthos
         </NavLink>
       </div>
     </div>

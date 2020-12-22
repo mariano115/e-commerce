@@ -12,6 +12,13 @@
     url(../../Fonts/Righteous-Regular.ttf) format("opentype");
 }
 
+@font-face {
+  font-family: "Old English (Let)";
+  font-weight: 600;
+  src: local("Old English (Let)"),
+    url(../../Fonts/Old\ English.ttf) format("opentype");
+}
+
 .navbar {
   border-bottom: 10px black;
   background-color: rgb(0, 0, 0);
@@ -45,11 +52,13 @@
 .logo-item {
   text-decoration: none;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
+  font-family: "Old English (Let)";
 }
 
 .logo-item:hover {
   text-decoration: none;
   color: rgb(163, 161, 161);
-  font-size: 40px;
+  font-size: 50px;
+  font-family: "Old English (Let)";
 }
