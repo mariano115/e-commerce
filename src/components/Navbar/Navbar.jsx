@@ -1,9 +1,10 @@
 import "./Navbar.css";
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isOpen, setOpen] = useState(false);
+  //const [isOpen, setOpen] = useState(false);
 
   return (
     <div className="navbar">

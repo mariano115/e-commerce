@@ -1,16 +1,11 @@
 .loginPage {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-image: url("../../images/loginWallpaper.png");
   height: 100%;
   background-size: cover;
-  /* Center and scale the image nicely */
-}
-
-.buttonClass {
-  background-color: rgb(240, 238, 238);
 }
 
 .loginPageBox {
@@ -22,7 +17,7 @@
 
 .right {
   background-position: right;
-  justify-content: end;
+  justify-content: start;
   align-items: flex-end;
 }
 

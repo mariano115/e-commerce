@@ -1,4 +1,7 @@
 .carrousel {
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
 }
 
 .carrousel-item {
@@ -6,5 +9,6 @@
 
   width: fit-content;
   object-fit: cover;
+  height: 550px;
   max-height: 600px;
 }

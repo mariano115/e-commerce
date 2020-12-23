@@ -1,5 +1,8 @@
 import "./Login.css";
 import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [user, setUsername] = useState("");
@@ -28,28 +31,40 @@ const Login = () => {
     <form className="formBox">
       <h2>Login</h2>
       <div className="inputDiv">
-        <input
+        <Form.Label>Usuario</Form.Label>
+        <Form.Control
           type="text"
           name="username"
-          placeholder="UserName"
-          className="inputPlace"
+          placeholder="Usuario"
           value={user}
           onChange={onChangeUsername}
         />
       </div>
       <div className="inputDiv">
-        <input
+        <Form.Label>Contraseña</Form.Label>
+        <Form.Control
           type="password"
           name="password"
-          placeholder="Password"
-          className="inputPlace"
+          placeholder="Contraseña"
           value={password}
           onChange={onChangePassword}
         />
       </div>
-      <button className="button" type="submit" onClick={handleSubmit}>
-        Submit
-      </button>
+      <div>
+        <Button
+          variant="success"
+          type="submit"
+          onClick={handleSubmit}
+          className="buttons"
+        >
+          Inrgesar
+        </Button>
+        <Link to="/">
+          <Button variant="success" type="submit" className="buttons">
+            Volver
+          </Button>
+        </Link>
+      </div>
     </form>
   );
 };
