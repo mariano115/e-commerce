@@ -5,31 +5,88 @@
     url(../../Fonts/Montserrat-SemiBold.ttf) format("opentype");
 }
 
-.homeBody {
-  display: grid;
-  /*grid-template-columns: 49% 49%;*/
-  grid-template-columns: 50% 50%;
-
-  justify-content: space-between;
-  font-family: "Montserrat";
-}
-
 h2 {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(78, 78, 78);
+  border-radius: 3px;
   color: white;
   display: inline;
-  padding: 5px 10px;
+  padding: 0px 10px;
 }
 
 p {
-  margin-top: 10px;
   padding-top: 10px;
 }
 
 section {
   margin: 10px 10px;
+  flex-basis: 42%;
+  /*border-style: solid;
+  border-width: 1px;
+  border-color: rgb(78, 78, 78);*/
+  font-size: 22px;
 }
 
 ul {
-  /*list-style-image: url("sqpurple.gif");*/
+  padding-top: 5px;
+}
+
+.homeBody {
+  padding-top: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  font-family: "Montserrat";
+
+}
+
+section.produccionTitle {
+  padding: 2px 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.produccion {
+  display: flex;
+  font-size: 22px;
+  /*flex-basis: 86%;*/
+
+}
+
+.produccion p {
+  width: 300px;
+
+  margin-left: 10px;
+}
+
+.camisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .homeBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  section {
+    margin: 25px 20px;
+    border-style: none;
+    flex-basis: 50%;
+    border-bottom: 4px solid;
+    border-color: rgb(78, 78, 78);
+    font-size: 22px;
+  }
+
+  .camisa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

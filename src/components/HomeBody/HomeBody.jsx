@@ -1,5 +1,6 @@
 import "./HomeBody.css";
 import nosotrosCamisaFoto from "../../images/nosotrosImagenCamisa.png";
+import nosotrosCamisaFoto2 from "../../images/nosotrosImagenCamisa2.png";
 import Jumbotron from "react-bootstrap/Jumbotron";
 
 const HomeBody = () => {
@@ -11,11 +12,6 @@ const HomeBody = () => {
           Con mas de 30 años dedicados a la fabriación de camisas para hombres,
           se distingue por un producto de calidad y buen gusto.
         </p>
-      </section>
-      <section>
-        <div>
-          <img src={nosotrosCamisaFoto} alt="Camisa" />
-        </div>
       </section>
       <section>
         <h2>Nosotros</h2>
@@ -31,22 +27,6 @@ const HomeBody = () => {
         <p>Nos encontramos realizando envíos a todo el interior del país.</p>
       </section>
       <section>
-        <h2>Producción</h2>
-        <ul>
-          <li>Producción calidad y diseño elegante</li>
-        </ul>
-        <ul>
-          <li>Producto en comercio y puntos de ventas</li>
-        </ul>
-        <ul>
-          <li>Revisión de la demanda</li>
-        </ul>
-        <ul>
-          <li>Revisión de la producción</li>
-        </ul>
-      </section>
-
-      <section>
         <h2>Comercialización</h2>
         <p>Ventas de camisas por mayor.</p>
         <p>
@@ -60,6 +40,23 @@ const HomeBody = () => {
           Consulte nuestros volúmenes de compra mínima de camisas por mayor y
           las condiciones de contratación para hacerle llegar su pedido.
         </p>
+      </section>
+      <section className="camisa">
+        <img src={nosotrosCamisaFoto2} alt="Camisa" />
+      </section>
+      <section className="produccionTitle">
+        <h2 >Producción</h2>
+      </section>
+      <section className="produccion">
+        <div>
+          <p> Producción calidad y diseño elegante</p>
+        </div>
+        <div>
+          <p> Producto en comercio y puntos de ventas</p>
+        </div>
+        <div>
+          <p> Revisión de la demanda y Revisión de la producción</p>
+        </div>
       </section>
     </div>
   );
