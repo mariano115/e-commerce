@@ -1,13 +1,11 @@
 .carrousel {
-  display: ;
+  display: contents;
   /*align-items: center;*/
   justify-content: center;
 }
 
 .carrousel-item {
   /*max-height: 500px;*/
-
-  width: fit-content;
-  object-fit: cover;
   height: 550px;
+  max-width: 100%;
 }

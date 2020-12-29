@@ -28,7 +28,7 @@ const Navbar = () => {
         <NavLink
           className="navbar_options-item"
           activeClassName="is-active"
-          to="/about"
+          to="/contacto"
         >
           Contacto
         </NavLink>

@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: local("Montserrat"),
+    url(../../Fonts/Montserrat-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "Old English (Let)";
+  font-weight: 600;
+  src: local("Old English (Let)"),
+    url(../../Fonts/Old\ English.ttf) format("opentype");
+}
+
+.containerFooter {
+  background-color: black;
+  color: white;
+  height: 350px;
+  display: flex;
+  font-family: "Montserrat";
+}
+
+.footerContent li {
+  width: 400px;
+  padding: 40px 40px;
+}
+
+.footerContent p {
+  width: 400px;
+  padding: 40px 40px;
+}
+
+.logo-itemFooter {
+  color: white;
+  font-size: 60px;
+  font-family: "Old English (Let)";
+  padding: 40px 40px;
+  text-decoration: none;
+}
+
+.logo-itemFooter:hover {
+  color: grey;
+  text-decoration: none;
+}
+.redirectBox {
+  align-self: center;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+.redirectFooter a {
+  list-style-type: none;
+  color: white;
+}
+
+.redirectFooter a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.containerFooter {
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.copyright {
+  border-top: 3px solid white;
+  color: white;
+  background-color: black;
+  height: 60px;
+  /*padding-left: 350px;*/
+  display: flex;
+  justify-content: space-evenly;
+}

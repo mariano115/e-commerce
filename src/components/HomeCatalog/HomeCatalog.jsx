@@ -13,17 +13,17 @@ const HomeCatalog = () => {
     <div className="catalog">
       <Container>
         <Row className="container">
-          <div class="responsive">
+          <div className="responsive">
             <Col xs={6} md={4}>
               <Image src={lisa} rounded className="catalogFotos" />
             </Col>
           </div>
-          <div class="responsive">
+          <div className="responsive">
             <Col xs={6} md={4}>
               <Image src={ratier} rounded className="catalogFotos" />
             </Col>
           </div>
-          <div class="responsive">
+          <div className="responsive">
             <Col xs={6} md={4}>
               <Image src={sport} rounded className="catalogFotos" />
             </Col>

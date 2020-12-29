@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Carousel from "../../components/Carousel/Carousel";
 import HomeCatalog from "../../components/HomeCatalog/HomeCatalog";
 import HomeBody from "../../components/HomeBody/HomeBody";
+import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 
 const HomePage = () => {
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Carousel />
       <HomeCatalog />
       <HomeBody />
+      <Footer />
     </div>
   );
 };

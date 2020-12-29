@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: local("Montserrat"),
+    url(../../Fonts/Montserrat-SemiBold.ttf) format("opentype");
+}
+
+.contactContainer {
+}
+.contactText {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+}
+
+.contactImage {
+  max-width: 100%;
+}
+
+.inputDivContact {
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family: "Montserrat";
+}
+
+.buttonContact {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+  .contactText {
+    display: flex;
+    flex-direction: row;
+    font-family: "Montserrat";
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

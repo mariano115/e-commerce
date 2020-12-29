@@ -18,7 +18,7 @@ p {
 }
 
 section {
-  margin: 10px 10px;
+  margin: 10px 20px;
   flex-basis: 42%;
   /*border-style: solid;
   border-width: 1px;
@@ -37,7 +37,6 @@ ul {
   align-content: flex-start;
   justify-content: center;
   font-family: "Montserrat";
-
 }
 
 section.produccionTitle {
@@ -45,18 +44,20 @@ section.produccionTitle {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
-.produccion {
+section.produccion {
   display: flex;
-  font-size: 22px;
-  /*flex-basis: 86%;*/
-
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  flex-wrap: wrap;
 }
 
 .produccion p {
-  width: 300px;
-
+  width: 400px;
   margin-left: 10px;
 }
 
@@ -65,8 +66,6 @@ section.produccionTitle {
   justify-content: center;
   align-items: center;
 }
-
-
 
 @media only screen and (max-width: 1200px) {
   .homeBody {
@@ -88,5 +87,10 @@ section.produccionTitle {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .produccion p {
+    flex-basis: 50%;
+    margin-left: 10px;
   }
 }
