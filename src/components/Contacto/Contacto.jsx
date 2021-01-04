@@ -35,11 +35,11 @@ const Contact = () => {
     console.log(
       "firstName: " +
         firstName +
-        "secondName: " +
+        " secondName: " +
         secondName +
-        "email: " +
+        " email: " +
         email +
-        "mesaje: " +
+        " mesaje: " +
         mesaje
     );
   };
@@ -61,7 +61,7 @@ const Contact = () => {
         </p>
       </div>
       <div className="contactForm">
-        <form className="">
+        <form>
           <div className="inputDivContact">
             <Form.Label>Nombre</Form.Label>
             <Form.Control
@@ -92,7 +92,7 @@ const Contact = () => {
           <div className="inputDivContact">
             <Form.Label>Mensaje</Form.Label>
             <Form.Control
-              type="text"
+              as="textarea"
               name="mesaje"
               value={mesaje}
               onChange={onChangemesaje}

@@ -11,17 +11,33 @@
   display: flex;
   flex-direction: column;
   font-family: "Montserrat";
+  align-items: center;
+}
+
+.contactText p {
+  max-width: 60%;
+  justify-content: center;
 }
 
 .contactImage {
   max-width: 100%;
 }
 
-.inputDivContact {
+.contactForm {
+  align-content: center;
   display: flex;
   flex-direction: column;
-  padding-left: 200px;
-  padding-right: 200px;
+}
+
+.contactForm form {
+  align-self: center;
+  min-width: 60%;
+}
+
+.inputDivContact {
+  /*padding-left: 200px;
+  padding-right: 200px;*/
+
   font-family: "Montserrat";
 }
 
@@ -30,14 +46,4 @@
   justify-content: center;
   margin-bottom: 10px;
   padding-bottom: 10px;
-}
-
-@media only screen and (max-width: 780px) {
-  .contactText {
-    display: flex;
-    flex-direction: row;
-    font-family: "Montserrat";
-    padding-left: 0px;
-    padding-right: 0px;
-  }
 }
