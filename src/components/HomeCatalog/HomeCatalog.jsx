@@ -45,7 +45,7 @@ const HomeCatalog = () => {
         </Row>
       </Container>
       <div className="second">
-        <Link to="/">
+        <Link to="/productos" className="botonCatalogo">
           <button className="buttons">Ir a Catalogo</button>
         </Link>
       </div>

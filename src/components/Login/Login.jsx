@@ -3,10 +3,17 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import endpoints from "../../config";
 
 const Login = () => {
   const [user, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  let config = {
+    headers: {
+      header1: "Access-Control-Allow-Origin: *",
+    },
+  };
 
   /*  const [error, setError] = useState({name:"", password:""})*/
 
@@ -15,6 +22,21 @@ const Login = () => {
     console.log(
       "Tu nombre de usuario es: " + user + " y la password es: " + password
     );
+    axios
+      .post(
+        endpoints.URLBackend + "login",
+        {
+          userName: user,
+          password: password,
+        },
+        config
+      )
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   const onChangeUsername = (e) => {

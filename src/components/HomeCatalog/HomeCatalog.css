@@ -68,6 +68,11 @@
   justify-content: center;
 }
 
+.botonCatalogo {
+  display: flex;
+  justify-content: center;
+}
+
 /*@media (max-width: 768px) {
   .container {
     padding: 12px 0;
