@@ -3,9 +3,9 @@ import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import lisa from "../../images/catalogHome/lisa.png";
-import ratier from "../../images/catalogHome/ratier.png";
-import sport from "../../images/catalogHome/sport.png";
+import lisa from "../../images/catalogHome/lisa.webp";
+import ratier from "../../images/catalogHome/ratier.webp";
+import sport from "../../images/catalogHome/sport.webp";
 import { Link } from "react-router-dom";
 
 const HomeCatalog = () => {
@@ -15,17 +15,31 @@ const HomeCatalog = () => {
         <Row className="container">
           <div className="responsive">
             <Col xs={6} md={4}>
-              <Image src={lisa} rounded className="catalogFotos" />
+              <picture>
+                <img
+                  className="catalogFotos"
+                  src={lisa}
+                  alt="Camisa de vestir lisa"
+                />
+              </picture>
             </Col>
           </div>
           <div className="responsive">
             <Col xs={6} md={4}>
-              <Image src={ratier} rounded className="catalogFotos" />
+              <picture>
+                <img
+                  className="catalogFotos"
+                  src={ratier}
+                  alt="Camisa de vestir ratier"
+                />
+              </picture>
             </Col>
           </div>
           <div className="responsive">
             <Col xs={6} md={4}>
-              <Image src={sport} rounded className="catalogFotos" />
+              <picture>
+                <img className="catalogFotos" src={sport} alt="Camisa sport" />
+              </picture>
             </Col>
           </div>
         </Row>

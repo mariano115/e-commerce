@@ -12,7 +12,7 @@ const Navbar = () => {
         <NavLink
           className="navbar_options-item"
           activeClassName="is-active"
-          to="/login"
+          to="/"
         >
           Nosotros
         </NavLink>

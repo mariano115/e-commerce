@@ -1,5 +1,6 @@
 import "./HomeBody.css";
-import nosotrosCamisaFoto2 from "../../images/nosotrosImagenCamisa2.png";
+
+import nosotrosCamisaFoto3 from "../../images/nosotrosImagenCamisa2.webp";
 
 const HomeBody = () => {
   return (
@@ -42,7 +43,9 @@ const HomeBody = () => {
           </p>
         </section>
         <section className="camisa">
-          <img src={nosotrosCamisaFoto2} alt="Camisa" />
+          <picture>
+            <img src={nosotrosCamisaFoto3} alt="Alt text" />
+          </picture>
         </section>
         <section className="produccionTitle">
           <h2>Producción</h2>

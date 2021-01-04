@@ -9,19 +9,38 @@
   background-color: #e6e6e6;
   display: flex;
   align-items: center;
-  height: 320px;
-  width: 300px;
+  min-height: 380px;
+  min-width: 350px;
   border-radius: 10px;
   flex-direction: column;
   font-family: "Montserrat";
 }
-.formBox h2 {
+
+.loginTitle {
   font-size: 50px;
-  padding: 20px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+.buttonDiv a {
+  display: flex;
+  justify-content: center;
 }
 
 .buttons {
-  margin-inline-end: 10px;
+  /*margin-inline-end: 10px;*/
+  max-width: 80%;
 }
 
 .inputDiv {

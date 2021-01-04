@@ -25,13 +25,13 @@ const Footer = () => {
         <div className="redirectBox">
           <ul>
             <li className="redirectFooter">
-              <a href="/">Contacto</a>
+              <a href="/contacto">Contacto</a>
             </li>
             <li className="redirectFooter">
               <a href="/">Formas de pago</a>
             </li>
             <li className="redirectFooter">
-              <a href="/">contacto</a>
+              <a href="/login">Login</a>
             </li>
           </ul>
         </div>

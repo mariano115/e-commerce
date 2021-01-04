@@ -29,7 +29,7 @@ const Login = () => {
 
   return (
     <form className="formBox">
-      <h2>Login</h2>
+      <h2 className="loginTitle">Login</h2>
       <div className="inputDiv">
         <Form.Label>Usuario</Form.Label>
         <Form.Control
@@ -50,7 +50,7 @@ const Login = () => {
           onChange={onChangePassword}
         />
       </div>
-      <div>
+      <div className="buttonDiv">
         <Button
           variant="success"
           type="submit"
