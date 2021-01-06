@@ -24,7 +24,7 @@ const Login = () => {
     );
     axios
       .post(
-        endpoints.URLBackend + "login",
+        endpoints.URLBackendKong + "login",
         {
           userName: user,
           password: password,
@@ -53,7 +53,6 @@ const Login = () => {
     <form className="formBox">
       <h2 className="loginTitle">Login</h2>
       <div className="inputDiv">
-        <Form.Label>Usuario</Form.Label>
         <Form.Control
           type="text"
           name="username"
@@ -63,7 +62,6 @@ const Login = () => {
         />
       </div>
       <div className="inputDiv">
-        <Form.Label>Contraseña</Form.Label>
         <Form.Control
           type="password"
           name="password"
@@ -79,7 +77,7 @@ const Login = () => {
           onClick={handleSubmit}
           className="buttons"
         >
-          Inrgesar
+          Ingresar
         </Button>
         <Link to="/">
           <Button variant="success" type="submit" className="buttons">
