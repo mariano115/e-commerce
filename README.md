@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+App information:
+  - App ID: 1:899844758938:web:014da7111093fe2b93ae23
+  - Display name: Porthos-Front
+
+You can run this command to print out your new app's Google Services config:
+  firebase apps:sdkconfig WEB 1:899844758938:web:014da7111093fe2b93ae23
+
+
+  √ Downloading configuration data of your Firebase WEB app
+// Copy and paste this into your JavaScript code to initialize the Firebase SDK.
+// You will also need to load the Firebase SDK.
+// See https://firebase.google.com/docs/web/setup for more details.
+
+firebase.initializeApp({
+  "projectId": "porthos-d0a53",
+  "appId": "1:899844758938:web:014da7111093fe2b93ae23",
+  "storageBucket": "porthos-d0a53.appspot.com",
+  "locationId": "southamerica-east1",
+  "apiKey": "AIzaSyBccaO9I2L4_bP8mDT7vzRkkBi2sqjVwUw",
+  "authDomain": "porthos-d0a53.firebaseapp.com",
+  "messagingSenderId": "899844758938",
+  "measurementId": "G-3CPNJC30PG"
+});

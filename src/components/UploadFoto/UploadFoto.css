@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  src: local("Montserrat"),
+    url(../../Fonts/Montserrat-SemiBold.ttf) format("opentype");
+}
+
+form {
+  width: 300px;
+  height: 250px;
+}
+
+.catalogProduct {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.catalogProduct p {
+  display: flex;
+  justify-content: center;
+
+  font-family: "Montserrat";
+}
+
+.catalogItems {
+  padding: 10px 10px;
+  flex-basis: 33%;
+  align-self: center;
+}

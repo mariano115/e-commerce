@@ -6,7 +6,9 @@
 }
 
 .contactContainer {
+  height: 780px;
 }
+
 .contactText {
   display: flex;
   flex-direction: column;
