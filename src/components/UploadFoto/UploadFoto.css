@@ -18,15 +18,36 @@ form {
   flex-wrap: wrap;
 }
 
-.catalogProduct p {
+/*.catalogProduct p {
   display: flex;
   justify-content: center;
-
   font-family: "Montserrat";
-}
+  flex-direction: column;
+}*/
 
 .catalogItems {
-  padding: 10px 10px;
-  flex-basis: 33%;
-  align-self: center;
+  /*padding: 10px 10px;*/
+  /*display: flex;*/
+  /*display: flex;*/
+  justify-content: center;
+  border: 12px solid #fff;
 }
+.catalogItems p {
+  display: flex;
+  justify-content: center;
+}
+
+.Item:hover {
+  border: 4px solid rgba(5, 5, 5, 0.274);
+}
+
+/*@media screen and (min-width: 1900px) {
+  .catalogItems {
+    padding: 10px 10px;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    border: 12px solid #fff;
+    flex-grow: 4;
+  }
+}*/

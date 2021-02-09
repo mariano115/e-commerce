@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import contactImage from "../../images/contacto.png";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import axios from "axios";
+import endpoints from "../../config";
 
 const Contact = () => {
   const [firstName, setfirstName] = useState("");
   const [secondName, setsecondName] = useState("");
   const [email, setemail] = useState("");
-  const [mesaje, setmesaje] = useState("");
+  const [message, setmessage] = useState("");
 
   const onChangefirstName = (e) => {
     const firstName = e.target.value;
@@ -25,9 +27,9 @@ const Contact = () => {
     setemail(email);
   };
 
-  const onChangemesaje = (e) => {
-    const mesaje = e.target.value;
-    setmesaje(mesaje);
+  const onChangemessage = (e) => {
+    const message = e.target.value;
+    setmessage(message);
   };
 
   const handleSubmit = (e) => {
@@ -39,9 +41,27 @@ const Contact = () => {
         secondName +
         " email: " +
         email +
-        " mesaje: " +
-        mesaje
+        " message: " +
+        message
     );
+
+    axios
+      .post(
+        endpoints.URLBackend + "sendemail",
+        {
+          firstName: firstName,
+          secondName: secondName,
+          email: email,
+          message: message,
+        }
+        //config
+      )
+      .then(function (res) {
+        console.log(res);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   return (
@@ -53,7 +73,7 @@ const Contact = () => {
           className="contactImage"
         />
       </div>
-      <div class="contactText">
+      <div className="contactText">
         <p>
           Si tenés alguna duda o comentario o simplemente querés recibir más
           información sobre los productos de Porthos, por favor completá el
@@ -93,9 +113,9 @@ const Contact = () => {
             <Form.Label>Mensaje</Form.Label>
             <Form.Control
               as="textarea"
-              name="mesaje"
-              value={mesaje}
-              onChange={onChangemesaje}
+              name="message"
+              value={message}
+              onChange={onChangemessage}
             />
           </div>
           <div className="buttonContact">

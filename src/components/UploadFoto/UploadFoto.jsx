@@ -50,8 +50,14 @@ function UploadFoto() {
       <ul className="catalogProduct">
         {users.map((user) => {
           return (
-            <li className="catalogItems" key={user.name}>
-              <img width="450" height="600" src={user.avatar} alt={user.name} />
+            <li key={user.name} className="catalogItems">
+              <img
+                width="350"
+                height="480"
+                src={user.avatar}
+                alt={user.name}
+                className="Item"
+              />
               <p>{user.name}</p>
             </li>
           );

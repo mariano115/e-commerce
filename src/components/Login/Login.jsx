@@ -24,7 +24,7 @@ const Login = () => {
     );
     axios
       .post(
-        endpoints.URLBackendKong + "login",
+        endpoints.URLBackend + "login",
         {
           userName: user,
           password: password,
