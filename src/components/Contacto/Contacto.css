@@ -7,6 +7,7 @@
 
 .contactContainer {
   height: 780px;
+  margin-bottom: 30px;
 }
 
 .contactText {
@@ -23,6 +24,7 @@
 
 .contactImage {
   max-width: 100%;
+  margin-bottom: 30px;
 }
 
 .contactForm {
