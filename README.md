@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Build a Photo Gallery With React & Firebase
+
+https://www.youtube.com/watch?v=vUe91uOx7R0&ab_channel=TraversyMedia
+
 ## Available Scripts
 
 In the project directory, you can run:
