@@ -36,13 +36,13 @@ const Contact = () => {
     e.preventDefault();
     console.log(
       "firstName: " +
-        firstName +
-        " secondName: " +
-        secondName +
-        " email: " +
-        email +
-        " message: " +
-        message
+      firstName +
+      " secondName: " +
+      secondName +
+      " email: " +
+      email +
+      " message: " +
+      message
     );
 
     axios
@@ -125,7 +125,7 @@ const Contact = () => {
               onClick={handleSubmit}
               className="buttons"
             >
-              Inrgesar
+              Ingresar
             </Button>
           </div>
         </form>

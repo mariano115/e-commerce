@@ -1,0 +1,12 @@
+.img-grid {
+    display: flex;
+    flex-grow: 3;
+    justify-content: space-around;
+}
+
+.img-wrap {}
+
+.img-wrap img {
+    max-height: 450px;
+    max-width: 450px;
+}
